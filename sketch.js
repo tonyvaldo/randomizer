@@ -204,7 +204,6 @@ let roster = [{
     superHero: "Spiderman",
     randomFact: "I really like cats, especially my cat"
   },
-  {},
 ];
 
 
