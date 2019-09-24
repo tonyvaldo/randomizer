@@ -204,6 +204,17 @@ let roster = [{
     superHero: "Spiderman",
     randomFact: "I really like cats, especially my cat"
   },
+  {
+    firstName: "asra",
+    lastName: "siddiqui",
+    color: "idk",
+    animal: "chameleons",
+    book: "codex 1962",
+    movie: "pulp fiction",
+    game: "idk",
+    superHero: "hate em all",
+    randomFact: "im grumpy"
+  }
 ];
 
 
