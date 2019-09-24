@@ -205,6 +205,16 @@ let roster = [{
     randomFact: "I really like cats, especially my cat"
   },
   {
+    firstName: "Alicia",
+    lastName: "Breinke",
+    favoriteColor: "purple",
+    favoriteAnimal: "dog",
+    favoriteBook: "The Art of Racing in the Rain",
+    favoriteMovie: "Spirited Away",
+    favoriteSuperHero: "Wonder Woman",
+    randomFact: "I want to live in another country someday"
+  },
+   {
     firstName: "asra",
     lastName: "siddiqui",
     color: "idk",
