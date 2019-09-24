@@ -38,7 +38,7 @@ let roster = [{
     book: "Captain underpants",
     movie: "Ace Ventura pet detective",
     game: "League Of Legends",
-    show: "Flash",
+    superHero: "Flash",
     randomFact: "I'm a Libra"
   },
   {
@@ -133,7 +133,8 @@ let roster = [{
     lastName: "Vedanthi",
     faveColor: "Blue",
     animal: "Crow",
-    book: "Of Mice and Men".movie: "American Psycho",
+    book: "Of Mice and Men",
+    movie: "American Psycho",
     game: "Fruit Ninja",
     superHero: "Batman",
     randomFact: "im a black belt"
@@ -181,8 +182,50 @@ let roster = [{
     favoriteGame: "Starfox Adventures",
     favoriteSuperHero: "none",
     randomFact: "I studied Japanese for 4 years"
-  }
-];
+  },
+  {
+    firstName: "Vanessa",
+    lastName: "Blacow-Berggen",
+    color: "pink",
+    animal: "cat",
+    book: "The Heartstriker series",
+    superHero: "Spiderman",
+    randomFact: "I really like cats, especially my cat",
+    game: "Spyro Reignited Trilogy",
+    movie: "Cats Don't Dance"
+  },
+  {
+    firstName: "Kevin",
+    lastName: "Sagara",
+    color: "yellow",
+    animal: "cat",
+    book: "sherlock holmes",
+    movie: "Shaun of the Dead",
+    game: "osu!",
+    superhero: "batman",
+    fact: "learning japanese"
+  },
+  {
+    firstName: "Rachel",
+    lastName: "Centinaje",
+    favoriteColor: "green",
+    animal: "dogs",
+    book: "none",
+    movie: "Drive",
+    game: "Dishonored",
+    superhero: "Deadpool",
+    randomFact: "I went camping this weekend"
+  },
+  {
+    firstName: "Alicia",
+    lastName: "Breinke",
+    favoriteColor: "purple",
+    favoriteAnimal: "dog",
+    favoriteBook: "The Art of Racing in the Rain",
+    favoriteMovie: "Spirited Away",
+    favoriteSuperHero: "Wonder Woman",
+    randomFact: "I want to live in another country someday"
+  }];
 
 
 function setup() {
