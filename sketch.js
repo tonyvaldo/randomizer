@@ -56,7 +56,7 @@ let roster = [{
     firstName: "Matteo",
     lastName: "Leva",
     color: "Black",
-    animal: "Cat": ,
+    animal: "Cat",
     book: "Pillars of the earth",
     movie: "The Godfather",
     game: "Witcher 3",
@@ -133,7 +133,8 @@ let roster = [{
     lastName: "Vedanthi",
     color: "Blue",
     animal: "Crow",
-    book: "Of Mice and Men".movie: "American Psycho",
+    book: "Of Mice and Men",
+    movie: "American Psycho",
     game: "Fruit Ninja",
     superHero: "Batman",
     randomFact: "im a black belt"
@@ -232,10 +233,18 @@ function setup() {
   createCanvas(400, 400);
   background(150);
 
-  dogs.push("mimi")
-  console.log(dogs);
+  console.log(roster[1].firstName + "'s fave movie genere is " + roster[1].movie);
+
+  //onject literal, how to type more than one variable in a string
+  console.log(`${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`)
 }
 
 function draw() {
 
+let type = `${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`;
+
+// textSize(30)
+text(type, 200, 100, 100, 180)
+
+// text(`${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`, 200, 100, 100, 180)
 }
