@@ -243,7 +243,7 @@ function draw() {
 
 let type = `${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`;
 
-// textSize(30)
+// textSize(30) this is messing it up right now
 text(type, 200, 100, 100, 180)
 
 // text(`${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`, 200, 100, 100, 180)
