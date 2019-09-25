@@ -234,9 +234,13 @@ function setup() {
   background(150);
 
   console.log(roster[1].firstName + " 's random fact is " + roster[1].randomFact);
+  // console.log(`a string sentence ${roster [1].name}`)
 
 }
 
 function draw() {
+  textSize(38)
+text(roster[1].firstName + " 's random fact is " + roster[1].randomFact)
+
 
 }
