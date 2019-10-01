@@ -229,35 +229,70 @@ let roster = [{
 ];
 
 let randomIndex;
+let animating = false;
 
 function setup() {
   createCanvas(400, 400);
   background(150);
+  textSize(20);
 
+  text("click to randomize", 50, 50);
 
-//console.log("random student's favorite movie is " + random(roster).movie);
-//text("random student's favorite movie is " + random(roster).movie, 50, 50);
+  //console.log("random student's favorite movie is " + random(roster).movie);
+  //text("random student's favorite movie is " + random(roster).movie, 50, 50);
 
   //console.log(roster[1].firstName + "'s fave movie genere is " + roster[1].movie);
 
   //onject literal, how to type more than one variable in a string
-//  console.log(`${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`)
+  //  console.log(`${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`)
 }
 
 function draw() {
 
-//let type = `${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`;
+  if (animating == true) {
+    ellipse(random(width), random(height), random(50, 200))
+  }
 
-// textSize(30) this is messing it up right now
-//text(type, 200, 100, 100, 180)
+  //let type = `${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`;
 
-// text(`${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`, 200, 100, 100, 180)
+  // textSize(30) this is messing it up right now
+  //text(type, 200, 100, 100, 180)
+
+  // text(`${roster[1].firstName}'s fave movie genere is ${roster[1].movie}`, 200, 100, 100, 180)
 }
 
-function mousePressed(){
-  background(random(200, 255));
-  randomIndex = int(random(roster.length));
-  text(roster[randomIndex].firstName, 50, 50);
-  roster.splice(randomIndex, 1)
+function randomizer() {
+  animating = false;
 
+  if (roster[0]) {
+
+    background(random(200, 255));
+    randomIndex = int(random(roster.length));
+    text(roster[randomIndex].firstName + "'s favourite color is " + roster[randomIndex].color, 50, 50);
+    roster.splice(randomIndex, 1)
+  } else {
+    background(random(200, 255));
+    text("nothing left!", 50, 50);
+  }
+
+}
+
+
+function mousePressed() {
+
+  setTimeout(randomizer, 2000)
+
+  animating = true;
+  setTimeout(randomizer, 2000);
+
+  // if (roster[0]) {
+  //
+  //   background(random(200, 255));
+  //   randomIndex = int(random(roster.length));
+  //   text(roster[randomIndex].firstName, 50, 50);
+  //   roster.splice(randomIndex, 1)
+  // } else {
+  //    background(random(200, 255));
+  //    text("nothing left!", 50, 50);
+  //  }
 }
